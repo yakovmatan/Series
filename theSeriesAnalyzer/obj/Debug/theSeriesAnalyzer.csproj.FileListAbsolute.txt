@@ -1,0 +1,7 @@
+C:\Users\User\source\repos\theSeriesAnalyzer\theSeriesAnalyzer\bin\Debug\theSeriesAnalyzer.exe.config
+C:\Users\User\source\repos\theSeriesAnalyzer\theSeriesAnalyzer\bin\Debug\theSeriesAnalyzer.exe
+C:\Users\User\source\repos\theSeriesAnalyzer\theSeriesAnalyzer\bin\Debug\theSeriesAnalyzer.pdb
+C:\Users\User\source\repos\theSeriesAnalyzer\theSeriesAnalyzer\obj\Debug\theSeriesAnalyzer.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\theSeriesAnalyzer\theSeriesAnalyzer\obj\Debug\theSeriesAnalyzer.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\theSeriesAnalyzer\theSeriesAnalyzer\obj\Debug\theSeriesAnalyzer.exe
+C:\Users\User\source\repos\theSeriesAnalyzer\theSeriesAnalyzer\obj\Debug\theSeriesAnalyzer.pdb
