@@ -9,10 +9,12 @@ namespace theSeriesAnalyzer
     internal class Program
     {
         
-        static void Input()
+        static string[] Input()
         {
-            Console.WriteLine("you choose a");
-            
+            Console.WriteLine("Enter at least three numbers separated with spaces");
+            string[] output = Console.ReadLine().Split(' ');
+            return output;
+
         }
 
         static void isNumbersAndPositiv()
