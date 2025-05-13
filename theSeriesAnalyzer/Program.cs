@@ -112,6 +112,7 @@ namespace theSeriesAnalyzer
             Console.WriteLine($"the max number is: {maximum}");
         }
 
+        // function to display the minmum
         static void MinOfSeries(List<int> arrayInt)
         {
             int minimum = arrayInt[0];
