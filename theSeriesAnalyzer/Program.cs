@@ -38,8 +38,12 @@ namespace theSeriesAnalyzer
             
         }
 
-        static void FromStringToNumbers()
+        static int[] FromStringToNumbers(string[] arrayString)
         {
+            int[] arraysNum = new int[arrayString.Length];
+            for (int i = 0; i < arrayString.Length; i++)
+                arraysNum[i] = int.Parse(arrayString[i]);
+            return arraysNum;
 
         }
 
