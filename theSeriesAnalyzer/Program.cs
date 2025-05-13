@@ -59,6 +59,7 @@ namespace theSeriesAnalyzer
             }
         }
         
+        // function to display the series in revers
         static void ReversSeries(List<int> arrrayInt)
         {
             for (int i = arrrayInt.Count - 1; i >= 0; i--)
