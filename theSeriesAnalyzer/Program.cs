@@ -180,7 +180,7 @@ namespace theSeriesAnalyzer
         }
 
         // function to restart series
-        static List<int> New(List<int> arrayInt)
+        static void New(List<int> arrayInt)
         {
             string[] input = Input();
             if (IsValidInput(input))
@@ -202,7 +202,7 @@ namespace theSeriesAnalyzer
                     Console.WriteLine("Because your input was invalid, you are left with the previous list.");
                 }
             }
-            return arrayInt;
+            
 
 
         }
@@ -240,7 +240,7 @@ namespace theSeriesAnalyzer
                 switch (yourChoose)
                 {
                     case "a":
-                        ints = New(ints);
+                        New(ints);
                         break;
 
                     case "b":
