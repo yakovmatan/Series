@@ -197,7 +197,7 @@ namespace theSeriesAnalyzer
                         break;
 
                     case "g":
-                        //AverageOfSeries();
+                        AverageOfSeries(ints);
                         break;
 
                     case "h":
