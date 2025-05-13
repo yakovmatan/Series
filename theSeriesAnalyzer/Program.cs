@@ -97,7 +97,15 @@ namespace theSeriesAnalyzer
                 switch (yourChoose)
                 {
                     case "a":
-                        Input();
+                        string[] input = Input();
+                        if (IsValidInput(input))
+                        {
+                            Console.WriteLine("good");
+                        }
+                        else
+                        {
+                            Console.WriteLine("your input not valid");
+                        }
                         break;
 
                     case "b":
