@@ -131,7 +131,7 @@ namespace theSeriesAnalyzer
                         break;
 
                     case "c":
-                        //ReversSeries();
+                        ReversSeries(ints);
                         break;
 
                     case "d":
