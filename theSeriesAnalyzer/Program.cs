@@ -8,7 +8,8 @@ namespace theSeriesAnalyzer
 {
     internal class Program
     {
-        
+
+        // function to get input.
         static string[] Input()
         {
             Console.WriteLine("Enter at least three numbers separated with spaces");
@@ -17,6 +18,7 @@ namespace theSeriesAnalyzer
 
         }
 
+        // function to check if valid input.
         static bool IsValidInput(string[] array)
         {
             int Count = 0; 
@@ -38,6 +40,7 @@ namespace theSeriesAnalyzer
             
         }
 
+        // function to convert string array to int array.
         static int[] FromStringToNumbers(string[] arrayString)
         {
             int[] arraysNum = new int[arrayString.Length];
@@ -105,9 +108,9 @@ namespace theSeriesAnalyzer
                         string[] input = Input();
                         if (IsValidInput(input))
                         {
-                            int[] updateInput = FromStringToNumbers(input);
-                            ints.AddRange(updateInput);
-                            Console.WriteLine(ints[1]);
+                            int[] updateInput = FromStringToNumbers(input);// convert input to int
+                            ints.AddRange(updateInput);// enter input to list main
+                            
                         }
                         else
                         {
