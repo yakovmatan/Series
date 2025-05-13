@@ -174,7 +174,7 @@ namespace theSeriesAnalyzer
                         break;
 
                     case "e":
-                        //MaxOfSeries();
+                        MaxOfSeries(ints);
                         break;
 
                     case "f":
