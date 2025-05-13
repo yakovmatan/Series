@@ -137,6 +137,7 @@ namespace theSeriesAnalyzer
             Console.WriteLine((double)sum / count);
         }
 
+        // function to display length of the series
         static void LengthOfSeries(List<int> arrayInt)
         {
             int length = 0;
