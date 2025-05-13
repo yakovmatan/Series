@@ -68,6 +68,7 @@ namespace theSeriesAnalyzer
             }
         }
 
+        // function to display the series in sorted
         static void SortedSeries(List<int> arrayInt)
         {
             // copy to array
