@@ -109,12 +109,18 @@ namespace theSeriesAnalyzer
                 {
                     maximum = i;
                 }
-            Console.WriteLine($"the max number is:{maximum}");
+            Console.WriteLine($"the max number is: {maximum}");
         }
 
-        static void MinOfSeries()
+        static void MinOfSeries(List<int> arrayInt)
         {
-            Console.WriteLine("you choose f");
+            int minimum = arrayInt[0];
+            foreach(int i in arrayInt)
+                if(i <  minimum)
+                {
+                    minimum = i;
+                }
+            Console.WriteLine($"the min number is: {minimum}");
         }
         
         static void AverageOfSeries()
@@ -179,7 +185,7 @@ namespace theSeriesAnalyzer
                         break;
 
                     case "f":
-                        MinOfSeries();
+                        MinOfSeries(ints);
                         break;
 
                     case "g":
