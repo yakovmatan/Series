@@ -179,6 +179,7 @@ namespace theSeriesAnalyzer
 
         }
 
+        // function to restart series
         static List<int> New(List<int> arrayInt)
         {
             string[] input = Input();
