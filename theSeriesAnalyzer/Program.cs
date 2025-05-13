@@ -218,7 +218,7 @@ namespace theSeriesAnalyzer
                         break;
 
                     case "i":
-                        //SumOfSeries();
+                        SumOfSeries(ints);
                         break;
 
                     default:
