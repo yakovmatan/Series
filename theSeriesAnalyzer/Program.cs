@@ -150,9 +150,13 @@ namespace theSeriesAnalyzer
             Console.WriteLine(length);
         }
 
-        static void SumOfSeries()
+        static void SumOfSeries(List<int> arrayInt)
         {
-            Console.WriteLine("you choose i");
+            int sum = 0;
+            for (int i = 0;i < arrayInt.Count;i++)
+                sum += arrayInt[i];
+
+            Console.WriteLine(sum);
         }
 
         
@@ -214,7 +218,7 @@ namespace theSeriesAnalyzer
                         break;
 
                     case "i":
-                        SumOfSeries();
+                        //SumOfSeries();
                         break;
 
                     default:
