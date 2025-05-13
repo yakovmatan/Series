@@ -50,6 +50,7 @@ namespace theSeriesAnalyzer
 
         }
 
+        // function to display the series
         static void DisplaySeries(List<int> arrayInt)
         {
             foreach (int i in arrayInt)
