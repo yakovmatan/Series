@@ -50,9 +50,12 @@ namespace theSeriesAnalyzer
 
         }
 
-        static void DisplaySeries()
+        static void DisplaySeries(List<int> arrayInt)
         {
-            Console.WriteLine("you choose b");
+            foreach (int i in arrayInt)
+            {
+                Console.WriteLine(i);
+            }
         }
         
         static void ReversSeries()
@@ -120,7 +123,7 @@ namespace theSeriesAnalyzer
                         break;
 
                     case "b":
-                        DisplaySeries();
+                        //DisplaySeries();
                         break;
 
                     case "c":
