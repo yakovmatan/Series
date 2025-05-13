@@ -162,7 +162,7 @@ namespace theSeriesAnalyzer
                         break;
 
                     case "d":
-                        //SortedSeries(ints);
+                        SortedSeries(ints);
                         break;
 
                     case "e":
