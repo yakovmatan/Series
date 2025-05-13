@@ -59,9 +59,12 @@ namespace theSeriesAnalyzer
             }
         }
         
-        static void ReversSeries()
+        static void ReversSeries(List<int> arrrayInt)
         {
-            Console.WriteLine("you choose c");
+            for (int i = arrrayInt.Count - 1; i >= 0; i--)
+            {
+                Console.WriteLine(arrrayInt[i]);
+            }
         }
 
         static void SortedSeries()
@@ -128,7 +131,7 @@ namespace theSeriesAnalyzer
                         break;
 
                     case "c":
-                        ReversSeries();
+                        //ReversSeries();
                         break;
 
                     case "d":
