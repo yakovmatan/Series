@@ -124,9 +124,16 @@ namespace theSeriesAnalyzer
             Console.WriteLine($"the min number is: {minimum}");
         }
         
-        static void AverageOfSeries()
+        static void AverageOfSeries(List<int> arrayInt)
         {
-            Console.WriteLine("you choose g");
+            int count = 0;
+            int sum = 0;
+            foreach (int i in arrayInt)
+            {
+                sum += i;
+                count++;
+            }
+            Console.WriteLine(sum / count);
         }
 
         static void LengthOfSeries()
@@ -190,7 +197,7 @@ namespace theSeriesAnalyzer
                         break;
 
                     case "g":
-                        AverageOfSeries();
+                        //AverageOfSeries();
                         break;
 
                     case "h":
