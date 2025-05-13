@@ -142,6 +142,7 @@ namespace theSeriesAnalyzer
                         string[] input = Input();
                         if (IsValidInput(input))
                         {
+                            ints.Clear();
                             int[] updateInput = FromStringToNumbers(input);// convert input to int
                             ints.AddRange(updateInput);// enter input to list main
                             Console.WriteLine("your input is valid");
