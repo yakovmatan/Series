@@ -183,7 +183,7 @@ namespace theSeriesAnalyzer
 
             do
             {
-                Console.WriteLine("Enter your choose:\na. Input a Series. (Replace the current series)\nb.Desplay the series in the order it was entered.\nc.Display the series in the reversed order it was entered.\nd.Display the series in sorted order (from low to high).\ne. Display the Max value of the series.\nf. Display the Miin value of the series.\ng. Display the Average of the series.\nh. Display the Number of eements in the series.\ni. Display the Sum of the series.\nj. Exit");
+                Console.WriteLine("Enter your choose:\n\na. Input a Series. (Replace the current series)\nb.Desplay the series in the order it was entered.\nc.Display the series in the reversed order it was entered.\nd.Display the series in sorted order (from low to high).\ne. Display the Max value of the series.\nf. Display the Miin value of the series.\ng. Display the Average of the series.\nh. Display the Number of eements in the series.\ni. Display the Sum of the series.\nj. Exit\n");
                 yourChoose = Console.ReadLine();
 
                 switch (yourChoose)
@@ -195,7 +195,7 @@ namespace theSeriesAnalyzer
                             ints.Clear();
                             int[] updateInput = FromStringToNumbers(input);// convert input to int
                             ints.AddRange(updateInput);// enter input to list main
-                            Console.WriteLine("your input is valid");
+                            Console.WriteLine("-------------------\nyour input is valid\n-------------------");
                             
                         }
                         else
@@ -241,7 +241,7 @@ namespace theSeriesAnalyzer
                             break;
                         else
                         {
-                            Console.WriteLine("enter valid value");
+                            Console.WriteLine("your choose not between a-j enter choose again\n");
                             break;
 
                         }
