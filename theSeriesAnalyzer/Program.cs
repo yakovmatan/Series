@@ -167,6 +167,15 @@ namespace theSeriesAnalyzer
         static void Main(string[] args)
         {
             List<int> ints = new List<int>();
+            if (args.Length > 0)
+            {
+                if (IsValidInput(args))
+                {
+                    int[] updateArgs = FromStringToNumbers(args);
+                    ints.AddRange(updateArgs);
+                }
+
+            }
 
             string yourChoose = "";
 
