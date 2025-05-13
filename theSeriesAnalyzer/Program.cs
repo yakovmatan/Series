@@ -134,12 +134,19 @@ namespace theSeriesAnalyzer
                 sum += i;
                 count++;
             }
-            Console.WriteLine(sum / count);
+            Console.WriteLine((double)sum / count);
         }
 
-        static void LengthOfSeries()
+        static void LengthOfSeries(List<int> arrayInt)
         {
-            Console.WriteLine("you choose h");
+            int length = 0;
+            for (int i = 0; i < arrayInt.Count; i++)
+            
+                length++;
+            
+                
+
+            Console.WriteLine(length);
         }
 
         static void SumOfSeries()
@@ -202,7 +209,7 @@ namespace theSeriesAnalyzer
                         break;
 
                     case "h":
-                        LengthOfSeries();
+                        //LengthOfSeries();
                         break;
 
                     case "i":
