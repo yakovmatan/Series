@@ -100,6 +100,7 @@ namespace theSeriesAnalyzer
             
         }
 
+        // function to display the maximun
         static void MaxOfSeries(List<int> arrayInt)
         {
             int maximum = arrayInt[0];
