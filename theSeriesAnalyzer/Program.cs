@@ -150,6 +150,7 @@ namespace theSeriesAnalyzer
             Console.WriteLine(length);
         }
 
+        // function to display sum of the series
         static void SumOfSeries(List<int> arrayInt)
         {
             int sum = 0;
