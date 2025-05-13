@@ -179,7 +179,34 @@ namespace theSeriesAnalyzer
 
         }
 
-        
+        static List<int> New(List<int> arrayInt)
+        {
+            string[] input = Input();
+            if (IsValidInput(input))
+            {
+                arrayInt.Clear();
+                int[] updateInput = FromStringToNumbers(input);// convert input to int
+                arrayInt.AddRange(updateInput);// enter input to list main
+                Console.WriteLine("-------------------\nyour input is valid\n-------------------");
+
+            }
+            else
+            {
+                Console.WriteLine("your input not valid");
+                if (arrayInt.Count == 0)
+                    New(arrayInt);
+
+                else
+                {
+                    Console.WriteLine("Because your input was invalid, you are left with the previous list.");
+                }
+            }
+            return arrayInt;
+
+
+        }
+
+
         static void Main(string[] args)
         {
             List<int> ints = new List<int>();
@@ -194,30 +221,25 @@ namespace theSeriesAnalyzer
                 }
 
             }
+            else
+            {
+                Console.WriteLine("There is no list in the system yet");
+                New(ints);
+                
+            }
 
             string yourChoose = "";
+            
 
             do
-            {
+            { 
                 ShowMenu();
                 yourChoose = Console.ReadLine();
 
                 switch (yourChoose)
                 {
                     case "a":
-                        string[] input = Input();
-                        if (IsValidInput(input))
-                        {
-                            ints.Clear();
-                            int[] updateInput = FromStringToNumbers(input);// convert input to int
-                            ints.AddRange(updateInput);// enter input to list main
-                            Console.WriteLine("-------------------\nyour input is valid\n-------------------");
-                            
-                        }
-                        else
-                        {
-                            Console.WriteLine("your input not valid");
-                        }
+                        ints = New(ints);
                         break;
 
                     case "b":
