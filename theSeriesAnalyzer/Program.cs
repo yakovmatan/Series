@@ -68,9 +68,35 @@ namespace theSeriesAnalyzer
             }
         }
 
-        static void SortedSeries()
+        static void SortedSeries(List<int> arrayInt)
         {
-            Console.WriteLine("you choose d");
+            // copy to array
+            List<int> ints = new List<int>(arrayInt);
+            bool flag;
+            for (int i = 0; i < arrayInt.Count - 1;i++)
+            {
+                flag = false;
+                for (int j = 0; j < arrayInt.Count - 1 -i; j++)
+                {
+                    if (ints[j] > ints[j + 1])
+                    {
+                        int temp = ints[j];
+                        ints[j] = ints[j + 1];
+                        ints[j + 1] = temp;
+                        flag = true;
+                    }
+                }
+                if(!flag)
+                    break;
+
+
+            }
+            foreach (int i in ints)
+            {
+                Console.WriteLine(i);
+            }
+                
+            
         }
 
         static void MaxOfSeries()
@@ -136,7 +162,7 @@ namespace theSeriesAnalyzer
                         break;
 
                     case "d":
-                        SortedSeries();
+                        //SortedSeries(ints);
                         break;
 
                     case "e":
