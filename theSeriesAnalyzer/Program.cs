@@ -100,9 +100,15 @@ namespace theSeriesAnalyzer
             
         }
 
-        static void MaxOfSeries()
+        static void MaxOfSeries(List<int> arrayInt)
         {
-            Console.WriteLine("you choose e");
+            int maximum = arrayInt[0];
+            foreach (int i in arrayInt)
+                if (i > maximum)
+                {
+                    maximum = i;
+                }
+            Console.WriteLine($"the max number is:{maximum}");
         }
 
         static void MinOfSeries()
@@ -168,7 +174,7 @@ namespace theSeriesAnalyzer
                         break;
 
                     case "e":
-                        MaxOfSeries();
+                        //MaxOfSeries();
                         break;
 
                     case "f":
