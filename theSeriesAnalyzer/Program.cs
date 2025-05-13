@@ -163,6 +163,22 @@ namespace theSeriesAnalyzer
             Console.WriteLine(sum);
         }
 
+        static void ShowMenu()
+        {
+            Console.WriteLine("Enter your choose:\n\n" +
+                    "a.Input a Series. (Replace the current series)\n" +
+                    "b.Desplay the series in the order it was entered.\n" +
+                    "c.Display the series in the reversed order it was entered.\n" +
+                    "d.Display the series in sorted order (from low to high).\n" +
+                    "e.Display the Max value of the series.\n" +
+                    "f.Display the Miin value of the series.\n" +
+                    "g.Display the Average of the series.\n" +
+                    "h.Display the Number of eements in the series.\n" +
+                    "i.Display the Sum of the series.\n" +
+                    "j.Exit\n");
+
+        }
+
         
         static void Main(string[] args)
         {
@@ -183,7 +199,7 @@ namespace theSeriesAnalyzer
 
             do
             {
-                Console.WriteLine("Enter your choose:\n\na. Input a Series. (Replace the current series)\nb.Desplay the series in the order it was entered.\nc.Display the series in the reversed order it was entered.\nd.Display the series in sorted order (from low to high).\ne. Display the Max value of the series.\nf. Display the Miin value of the series.\ng. Display the Average of the series.\nh. Display the Number of eements in the series.\ni. Display the Sum of the series.\nj. Exit\n");
+                ShowMenu();
                 yourChoose = Console.ReadLine();
 
                 switch (yourChoose)
