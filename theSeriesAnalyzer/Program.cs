@@ -17,8 +17,24 @@ namespace theSeriesAnalyzer
 
         }
 
-        static void IsValidInput()
+        static bool IsValidInput(string[] array)
         {
+            int Count = 0; 
+            foreach (string item in array)
+            {
+                if (!int.TryParse(item,out _))
+                {
+                    return false;
+                }
+                else
+                {
+                    Count++;
+                }
+
+            }
+            if (Count >= 3) 
+                return true;
+            return false;
             
         }
 
