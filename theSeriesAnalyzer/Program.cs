@@ -104,7 +104,7 @@ namespace theSeriesAnalyzer
                         string[] input = Input();
                         if (IsValidInput(input))
                         {
-                            Console.WriteLine("good");
+                            int[] updateInput = FromStringToNumbers(input);
                         }
                         else
                         {
