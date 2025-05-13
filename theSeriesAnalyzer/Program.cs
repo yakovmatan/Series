@@ -155,7 +155,10 @@ namespace theSeriesAnalyzer
         {
             int sum = 0;
             for (int i = 0;i < arrayInt.Count;i++)
+            {
                 sum += arrayInt[i];
+            }
+               
 
             Console.WriteLine(sum);
         }
