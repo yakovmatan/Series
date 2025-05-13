@@ -209,7 +209,7 @@ namespace theSeriesAnalyzer
                         break;
 
                     case "h":
-                        //LengthOfSeries();
+                        LengthOfSeries(ints);
                         break;
 
                     case "i":
