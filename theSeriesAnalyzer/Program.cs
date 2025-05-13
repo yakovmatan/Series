@@ -17,7 +17,7 @@ namespace theSeriesAnalyzer
 
         }
 
-        static void isNumbersAndPositiv()
+        static void IsValidInput()
         {
             
         }
