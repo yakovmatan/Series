@@ -124,6 +124,7 @@ namespace theSeriesAnalyzer
             Console.WriteLine($"the min number is: {minimum}");
         }
         
+        // function to display the average
         static void AverageOfSeries(List<int> arrayInt)
         {
             int count = 0;
