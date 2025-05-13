@@ -124,7 +124,7 @@ namespace theSeriesAnalyzer
                         break;
 
                     case "b":
-                        //DisplaySeries();
+                        DisplaySeries(ints);
                         break;
 
                     case "c":
