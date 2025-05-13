@@ -167,6 +167,8 @@ namespace theSeriesAnalyzer
         static void Main(string[] args)
         {
             List<int> ints = new List<int>();
+
+            // checking if there are arguments
             if (args.Length > 0)
             {
                 if (IsValidInput(args))
