@@ -24,11 +24,11 @@ namespace theSeriesAnalyzer
             int Count = 0; 
             foreach (string item in array)
             {
-                if (!int.TryParse(item,out _))
+                if (!int.TryParse(item,out int number))
                 {
                     return false;
                 }
-                else
+                else if (number > 0) 
                 {
                     Count++;
                 }
@@ -110,6 +110,7 @@ namespace theSeriesAnalyzer
                         {
                             int[] updateInput = FromStringToNumbers(input);// convert input to int
                             ints.AddRange(updateInput);// enter input to list main
+                            Console.WriteLine("your input is valid");
                             
                         }
                         else
