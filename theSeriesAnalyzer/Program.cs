@@ -106,6 +106,8 @@ namespace theSeriesAnalyzer
                         if (IsValidInput(input))
                         {
                             int[] updateInput = FromStringToNumbers(input);
+                            ints.AddRange(updateInput);
+                            Console.WriteLine(ints[1]);
                         }
                         else
                         {
