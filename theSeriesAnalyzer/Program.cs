@@ -90,6 +90,7 @@ namespace theSeriesAnalyzer
         
         static void Main(string[] args)
         {
+            List<int> ints = new List<int>();
 
             string yourChoose = "";
 
